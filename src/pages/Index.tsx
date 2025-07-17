@@ -28,17 +28,31 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-20">
+      <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-24">
         <div className="container mx-auto px-6 text-center">
           <Badge className="mb-6 bg-purple-600 text-white px-4 py-2">
             Закрытый инвестиционный клуб
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Кайф Озеро
+            Кайф Озеро: Где Рождаются<br />
+            Инвестиции Премиум-Класса
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-4xl mx-auto">
-            Где рождаются инвестиции премиум-класса. Войдите в круг избранных и инвестируйте в эксклюзивные проекты на уникальных LUX-мероприятиях.
+            Войдите в круг избранных. Инвестируйте в эксклюзивные проекты на уникальных LUX-мероприятиях закрытого бизнес-кооператива.
           </p>
+          
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 max-w-4xl mx-auto mb-8">
+            <p className="text-lg text-gray-300 mb-6">
+              Устали от шумных выставок и поверхностных знакомств? Ищете доступ к по-настоящему выгодным проектам в атмосфере доверия и высокого статуса?
+            </p>
+            <p className="text-lg text-gray-300 mb-6">
+              Добро пожаловать в "Кайф Озеро" – ваш закрытый инвестиционный клуб на базе надежного потребительского кооператива. Мы создали пространство, где элита бизнеса встречается для серьезных сделок в формате исключительного комфорта.
+            </p>
+            <p className="text-xl text-purple-400 font-semibold">
+              "Кайф Озеро" – это не просто клуб. Это ваш статус. Это ваши эксклюзивные возможности. Это инвестиции, заключенные в атмосфере роскоши и взаимного уважения.
+            </p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg">
               <Icon name="Crown" size={20} className="mr-2" />
@@ -47,6 +61,15 @@ const Index = () => {
             <Button size="lg" variant="outline" className="border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-8 py-4 text-lg">
               Запросить приглашение
             </Button>
+          </div>
+          
+          <div className="mt-8 text-sm text-gray-400 bg-gray-900/50 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="mb-2">
+              <strong>P.S.</strong> Количество мест ограничено. Убедитесь, что ваше место в этом уникальном инвестиционном кругу уже зарезервировано.
+            </p>
+            <p className="text-purple-400 font-semibold">
+              Кайфуйте от бизнеса на новом уровне с "Кайф Озеро"!
+            </p>
           </div>
         </div>
       </section>
