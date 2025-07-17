@@ -309,7 +309,7 @@ const Index = () => {
           <Separator className="my-8 bg-gray-800" />
           
           <div className="text-center text-gray-400">
-            <p>&copy; 2024 Кайф Озеро. Все права защищены.</p>
+            <p>© 2025 Кайф Озеро. Все права защищены.</p>
             <p className="mt-2 text-sm">Количество мест ограничено. Убедитесь, что ваше место зарезервировано.</p>
           </div>
         </div>
