@@ -79,12 +79,16 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-black">О клубе</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              «Кайф Озеро» — легально зарегистрированный потребительский кооператив для успешных предпринимателей и инвесторов
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+              Добро пожаловать в "Кайф Озеро" – ваш закрытый инвестиционный клуб на базе надежного потребительского кооператива. 
+              Мы создали пространство, где элита бизнеса встречается для серьезных сделок в формате исключительного комфорта.
             </p>
+            <Badge className="bg-purple-600 text-white px-6 py-2 text-lg">
+              Легально зарегистрированный потребительский кооператив
+            </Badge>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
                 src="/img/06f602a5-b52f-4934-9b31-63f7df28e5e9.jpg" 
@@ -118,6 +122,36 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          {/* Дополнительная информация */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-black">Что делает нас особенными</h3>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                Мы не просто организуем встречи – мы создаем уникальную экосистему для премиальных инвестиций
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-purple-50 rounded-xl">
+                <Icon name="Users" size={32} className="text-purple-600 mx-auto mb-4" />
+                <h4 className="font-semibold mb-2 text-black">Селективность</h4>
+                <p className="text-sm text-gray-600">Тщательный отбор участников и проектов для максимальной ценности</p>
+              </div>
+              
+              <div className="text-center p-6 bg-purple-50 rounded-xl">
+                <Icon name="Sparkles" size={32} className="text-purple-600 mx-auto mb-4" />
+                <h4 className="font-semibold mb-2 text-black">Роскошь</h4>
+                <p className="text-sm text-gray-600">Изысканные локации и безупречный сервис премиум-класса</p>
+              </div>
+              
+              <div className="text-center p-6 bg-purple-50 rounded-xl">
+                <Icon name="Shield" size={32} className="text-purple-600 mx-auto mb-4" />
+                <h4 className="font-semibold mb-2 text-black">Надежность</h4>
+                <p className="text-sm text-gray-600">Юридическая защита через структуру кооператива</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -125,40 +159,170 @@ const Index = () => {
       <section id="advantages" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-black">Преимущества</h2>
-            <p className="text-xl text-gray-600">Почему «Кайф Озеро» — ваш ключ к премиальным возможностям</p>
+            <h2 className="text-4xl font-bold mb-6 text-black">Почему "Кайф Озеро" – ваш ключ к премиальным возможностям</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Мы создали уникальную экосистему для элитного бизнеса, где каждый элемент работает на ваш успех</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader className="text-center">
-                <Icon name="Shield" size={48} className="text-purple-600 mx-auto mb-4" />
-                <CardTitle className="text-xl">Юридическая защита</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">Деятельность строго в рамках Устава и ФЗ «О потребительской кооперации»</p>
-              </CardContent>
-            </Card>
+          <div className="space-y-16">
+            {/* Эксклюзивность */}
+            <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-3xl p-8 md:p-12">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <Icon name="Crown" size={64} className="text-purple-600 mb-6" />
+                  <h3 className="text-3xl font-bold mb-4 text-black">Эксклюзивность как Стандарт</h3>
+                  <p className="text-lg text-gray-700 mb-6">
+                    Мы тщательно отбираем участников и проекты. Это не массовое мероприятие. Это закрытый круг доверенных партнеров, где ценятся репутация и потенциал.
+                  </p>
+                  <div className="flex items-center space-x-4">
+                    <Icon name="Users" size={20} className="text-purple-600" />
+                    <span className="text-gray-600">Только проверенные пайщики</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-2xl p-6 shadow-lg">
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <Icon name="Check" size={20} className="text-green-600" />
+                      <span className="text-gray-700">Строгий отбор участников</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Icon name="Check" size={20} className="text-green-600" />
+                      <span className="text-gray-700">Гарантия конфиденциальности</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Icon name="Check" size={20} className="text-green-600" />
+                      <span className="text-gray-700">Репутационные гарантии</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <Card className="border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader className="text-center">
-                <Icon name="UserCheck" size={48} className="text-purple-600 mx-auto mb-4" />
-                <CardTitle className="text-xl">Система верификации</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">Все участники — проверенные пайщики с гарантией конфиденциальности</p>
-              </CardContent>
-            </Card>
+            {/* LUX-Мероприятия */}
+            <div className="bg-gradient-to-r from-gray-900 to-black rounded-3xl p-8 md:p-12 text-white">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="order-2 md:order-1">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div className="space-y-4">
+                      <div className="flex items-center space-x-3">
+                        <Icon name="MapPin" size={20} className="text-purple-400" />
+                        <span className="text-gray-200">Изысканные локации</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Icon name="Sparkles" size={20} className="text-purple-400" />
+                        <span className="text-gray-200">Безупречный сервис</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Icon name="Music" size={20} className="text-purple-400" />
+                        <span className="text-gray-200">Живая музыка</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <Icon name="Utensils" size={20} className="text-purple-400" />
+                        <span className="text-gray-200">Изысканное застолье</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-1 md:order-2">
+                  <Icon name="Gem" size={64} className="text-purple-400 mb-6" />
+                  <h3 className="text-3xl font-bold mb-4">LUX-Мероприятия: Бизнес в Высшей Лиге</h3>
+                  <p className="text-lg text-gray-300 mb-6">
+                    Забудьте о скучных конференц-залах. Мы проводим роскошные бизнес-ивенты. Изысканные локации, безупречный сервис, атмосфера премиум-класса – фон для ваших самых важных переговоров.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <Card className="border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader className="text-center">
-                <Icon name="Gem" size={48} className="text-purple-600 mx-auto mb-4" />
-                <CardTitle className="text-xl">Эксклюзивная атмосфера</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">Мероприятия только для членов кооператива в роскошных локациях</p>
-              </CardContent>
-            </Card>
+            {/* Проекты и нетворкинг */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border-purple-200 hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple-50 to-white">
+                <CardHeader className="text-center pb-6">
+                  <Icon name="Briefcase" size={48} className="text-purple-600 mx-auto mb-4" />
+                  <CardTitle className="text-xl">Презентация Лучших Проектов</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-center mb-4">
+                    В центре внимания – тщательно отобранные инвестиционные проекты наших партнеров. Вы получаете доступ к предложениям, которые редко выходят за кулисы узкого круга.
+                  </p>
+                  <div className="bg-white rounded-lg p-4 border border-purple-200">
+                    <p className="text-sm text-purple-800 font-semibold text-center">
+                      Эксклюзивные предложения только для членов клуба
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-purple-200 hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple-50 to-white">
+                <CardHeader className="text-center pb-6">
+                  <Icon name="Users" size={48} className="text-purple-600 mx-auto mb-4" />
+                  <CardTitle className="text-xl">Мощный Нетворкинг с Лидерами</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-center mb-4">
+                    Ваши соседи за столом – топовые спикеры, лидеры рынков, владельцы капиталов. Здесь завязываются партнерства, о которых другие только мечтают.
+                  </p>
+                  <div className="bg-white rounded-lg p-4 border border-purple-200">
+                    <p className="text-sm text-purple-800 font-semibold text-center">
+                      Элита бизнеса в одном месте
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Симбиоз дела и кайфа */}
+            <div className="bg-gradient-to-r from-purple-600 to-purple-800 rounded-3xl p-8 md:p-12 text-white text-center">
+              <Icon name="Heart" size={64} className="text-white mx-auto mb-6" />
+              <h3 className="text-3xl font-bold mb-6">Идеальный Симбиоз Дела и Кайфа</h3>
+              <p className="text-lg text-purple-100 mb-8 max-w-4xl mx-auto">
+                Серьезный разговор о цифрах плавно перетекает в неформальное общение. Живая музыка, изысканное застолье, развлекательная программа – не просто антураж, а инструмент для глубокого погружения в проекты и построения искренних отношений.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <Icon name="TrendingUp" size={32} className="text-white mx-auto mb-4" />
+                  <h4 className="font-semibold mb-2">Бизнес</h4>
+                  <p className="text-sm text-purple-100">Серьезные переговоры и сделки</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <Icon name="Plus" size={32} className="text-white mx-auto mb-4" />
+                  <h4 className="font-semibold mb-2">+</h4>
+                  <p className="text-sm text-purple-100">Плавный переход</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <Icon name="Smile" size={32} className="text-white mx-auto mb-4" />
+                  <h4 className="font-semibold mb-2">Кайф</h4>
+                  <p className="text-sm text-purple-100">Неформальная атмосфера</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Погружение и надежность */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                <Icon name="Eye" size={48} className="text-blue-600 mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-black">"Погружение" в Проекты</h3>
+                <p className="text-gray-700 mb-6">
+                  Мы не просто показываем слайды. Мы создаем среду, где можно прочувствовать проект, задать вопросы без ограничений, обсудить детали с авторами в неформальной обстановке доверия.
+                </p>
+                <div className="bg-white rounded-lg p-4 border border-blue-200">
+                  <p className="text-sm text-blue-800 font-semibold">
+                    Это инвестиции с полным пониманием
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-purple-50 rounded-2xl p-8">
+                <Icon name="Shield" size={48} className="text-green-600 mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-black">Надежность Кооператива</h3>
+                <p className="text-gray-700 mb-6">
+                  Потребительский кооператив – это прозрачная и надежная юридическая платформа для взаимодействия, обеспечивающая безопасность и соблюдение интересов всех пайщиков.
+                </p>
+                <div className="bg-white rounded-lg p-4 border border-green-200">
+                  <p className="text-sm text-green-800 font-semibold">
+                    Юридическая защита и прозрачность
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -313,10 +477,49 @@ const Index = () => {
             
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                <p>Email: info@kaif-ozero.ru</p>
-                <p>Telegram: @kaif_ozero</p>
+              <div className="space-y-3 text-gray-400">
+                <div className="flex items-center space-x-3">
+                  <Icon name="Phone" size={18} className="text-purple-400" />
+                  <a href="tel:+7XXXXXXXXXX" className="hover:text-purple-400 transition-colors">
+                    +7 (XXX) XXX-XX-XX
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Mail" size={18} className="text-purple-400" />
+                  <a href="mailto:info@kaif-ozero.ru" className="hover:text-purple-400 transition-colors">
+                    info@kaif-ozero.ru
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="MessageCircle" size={18} className="text-purple-400" />
+                  <a href="https://t.me/kaif_ozero" className="hover:text-purple-400 transition-colors">
+                    @kaif_ozero
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Instagram" size={18} className="text-purple-400" />
+                  <a href="https://instagram.com/kaif_ozero" className="hover:text-purple-400 transition-colors">
+                    @kaif_ozero
+                  </a>
+                </div>
+              </div>
+              
+              <div className="mt-6 pt-4 border-t border-gray-800">
+                <h5 className="font-semibold mb-3 text-purple-400">Социальные сети</h5>
+                <div className="flex space-x-4">
+                  <a href="https://t.me/kaif_ozero" className="text-gray-400 hover:text-purple-400 transition-colors">
+                    <Icon name="MessageCircle" size={24} />
+                  </a>
+                  <a href="https://instagram.com/kaif_ozero" className="text-gray-400 hover:text-purple-400 transition-colors">
+                    <Icon name="Instagram" size={24} />
+                  </a>
+                  <a href="https://wa.me/7XXXXXXXXXX" className="text-gray-400 hover:text-purple-400 transition-colors">
+                    <Icon name="Phone" size={24} />
+                  </a>
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  Акцент на эстетику и эксклюзивность
+                </p>
               </div>
             </div>
             
