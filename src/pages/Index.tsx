@@ -484,9 +484,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" size={18} className="text-purple-400" />
-                  <a href="mailto:info@kaif-ozero.ru" className="hover:text-purple-400 transition-colors">
-                    info@kaif-ozero.ru
-                  </a>
+                  <a href="mailto:info@kaif-ozero.ru" className="hover:text-purple-400 transition-colors">kaif-lake@mail.ru</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="MessageCircle" size={18} className="text-purple-400" />
