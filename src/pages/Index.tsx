@@ -480,9 +480,7 @@ const Index = () => {
               <div className="space-y-3 text-gray-400">
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" size={18} className="text-purple-400" />
-                  <a href="tel:+7XXXXXXXXXX" className="hover:text-purple-400 transition-colors">
-                    +7 (XXX) XXX-XX-XX
-                  </a>
+                  <a href="tel:+7XXXXXXXXXX" className="hover:text-purple-400 transition-colors">+7 (978) 316-87-94</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" size={18} className="text-purple-400" />
